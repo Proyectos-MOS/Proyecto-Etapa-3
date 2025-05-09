@@ -1,5 +1,0 @@
-Listing 2: Ejemplo de archivo verificacion_caso2.csv (con ventanas de tiempo)
-VehicleId,VehicleType,InitialLoad,RouteSequence,ClientsServed,DemandSatisfied,ArrivalTimes,TotalDistance,TotalTime,Cost
-1,Truck,200.0,CD - ÇOM11 - ÇOM03 - ÇOM04 - ÇOM01 - ÇOM12 - ÇOM10 - ÇOM05 - ÇOM14 - ÇD,8,10.0 - 18.0 - 22.0 - 25.0 - 24.0 - 9.0 - 13.0 - 15.0,08:30 - 10:15 - 13:00 - 13:20 - 13:40 - 14:30 - 14:50 - 15:00,40.04,900.0,601335.4
-2,Truck,25.0,CD - ÇOM08 - ÇOM07 - ÇOM09 - ÇD,3,10.0 - 5.0 - 9.0,08:15 - 09:11 - 14:48,13.04,888.0,196240.0
-3,Truck,25.0,CD - ÇOM06 - ÇOM02 - ÇOM13 - ÇD,3,4.0 - 9.0 - 12.0,09:00 - 13:30 - 14:40,11.5,880.0,173140.0
