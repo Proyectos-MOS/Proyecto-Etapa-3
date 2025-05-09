@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_3ccb8a00296022d7426b83bc60bddd17 {
+                #map_af16beb2fc7c215efc0fa6838692e786 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -40,14 +40,25 @@
 <body>
     
     
-            <div class="folium-map" id="map_3ccb8a00296022d7426b83bc60bddd17" ></div>
+<div style="
+    position: fixed; 
+    bottom: 50px; left: 50px; width: 220px; height: auto; 
+    background-color: white; z-index:9999; font-size:14px; 
+    border:2px solid grey; border-radius:8px; padding: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+">
+<b>Leyenda de vehículos</b><br>
+<i style="background:gray;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Depósito (Nodo 0)<br>
+<i style="background:red;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 1 (4x4)<br><i style="background:blue;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 2 (drone)<br><i style="background:green;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 3 (drone)<br><i style="background:purple;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 4 (4x4)<br><i style="background:orange;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 5 (drone)<br><i style="background:darkred;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 6 (drone)<br><i style="background:cadetblue;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 7 (4x4)<br><i style="background:black;width:10px;height:10px;display:inline-block;margin-right:5px;"></i> Vehículo 8 (drone)<br></div>
+    
+            <div class="folium-map" id="map_af16beb2fc7c215efc0fa6838692e786" ></div>
         
 </body>
 <script>
     
     
-            var map_3ccb8a00296022d7426b83bc60bddd17 = L.map(
-                "map_3ccb8a00296022d7426b83bc60bddd17",
+            var map_af16beb2fc7c215efc0fa6838692e786 = L.map(
+                "map_af16beb2fc7c215efc0fa6838692e786",
                 {
                     center: [4.743359, -74.153536],
                     crs: L.CRS.EPSG3857,
@@ -64,7 +75,7 @@
 
         
     
-            var tile_layer_66e1513df22b4d39e04a9d13854ac593 = L.tileLayer(
+            var tile_layer_0717c06558d070eee9990093010aea98 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -81,608 +92,68 @@
             );
         
     
-            tile_layer_66e1513df22b4d39e04a9d13854ac593.addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            tile_layer_0717c06558d070eee9990093010aea98.addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            var marker_426a9dd0905398172eae6e7bded449f0 = L.marker(
+            var marker_0db5742a187b34fc61581eca740d92a8 = L.marker(
                 [4.743359, -74.153536],
                 {
 }
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            var icon_4827fd8859c61ea9cc8d9ca1e931cf58 = L.AwesomeMarkers.icon(
+            var icon_ad87b426da215799acb6e9ba7f35b71d = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "red",
+  "markerColor": "gray",
   "iconColor": "white",
   "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6342319c4e40b3094cd5a8a2582097e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c844b11795ebf4284b379cc2939de95 = $(`<div id="html_7c844b11795ebf4284b379cc2939de95" style="width: 100.0%; height: 100.0%;">Depósito (Nodo 0)</div>`)[0];
+                popup_6342319c4e40b3094cd5a8a2582097e8.setContent(html_7c844b11795ebf4284b379cc2939de95);
+            
+        
+
+        marker_0db5742a187b34fc61581eca740d92a8.bindPopup(popup_6342319c4e40b3094cd5a8a2582097e8)
+        ;
+
+        
+    
+    
+                marker_0db5742a187b34fc61581eca740d92a8.setIcon(icon_ad87b426da215799acb6e9ba7f35b71d);
+            
+    
+            var marker_338a99428c085037e59bc35b22d84f31 = L.marker(
+                [4.646217006050524, -74.09690889182339],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_9695efee1db1eb953bb37310be90883f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
         
     
-        var popup_05d99c68995f6cb2afcad69252f943b5 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_5175736f7ea8e6764207838b17df1c6f = $(`<div id="html_5175736f7ea8e6764207838b17df1c6f" style="width: 100.0%; height: 100.0%;">Depósito 1.0</div>`)[0];
-                popup_05d99c68995f6cb2afcad69252f943b5.setContent(html_5175736f7ea8e6764207838b17df1c6f);
-            
-        
-
-        marker_426a9dd0905398172eae6e7bded449f0.bindPopup(popup_05d99c68995f6cb2afcad69252f943b5)
-        ;
-
-        
-    
-    
-                marker_426a9dd0905398172eae6e7bded449f0.setIcon(icon_4827fd8859c61ea9cc8d9ca1e931cf58);
-            
-    
-            var circle_marker_3dec9f64567c595914debde9ff255f5c = L.circleMarker(
-                [4.59795431125545, -74.09893796560621],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_313955021ff65d6f485174eb3e6f26e2 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_480657e58d0742e9532dea91e567521c = $(`<div id="html_480657e58d0742e9532dea91e567521c" style="width: 100.0%; height: 100.0%;">Cliente 1.0</div>`)[0];
-                popup_313955021ff65d6f485174eb3e6f26e2.setContent(html_480657e58d0742e9532dea91e567521c);
-            
-        
-
-        circle_marker_3dec9f64567c595914debde9ff255f5c.bindPopup(popup_313955021ff65d6f485174eb3e6f26e2)
-        ;
-
-        
-    
-    
-            var circle_marker_3796578ad58206b519103446a6ba8ab4 = L.circleMarker(
-                [4.687820646838871, -74.07557103763986],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_ec57d8687a698c529be4360974720368 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_70a4606435937ae98ce29849f7fb911f = $(`<div id="html_70a4606435937ae98ce29849f7fb911f" style="width: 100.0%; height: 100.0%;">Cliente 2.0</div>`)[0];
-                popup_ec57d8687a698c529be4360974720368.setContent(html_70a4606435937ae98ce29849f7fb911f);
-            
-        
-
-        circle_marker_3796578ad58206b519103446a6ba8ab4.bindPopup(popup_ec57d8687a698c529be4360974720368)
-        ;
-
-        
-    
-    
-            var circle_marker_d66e830bcfe80592a379b1ba7b761330 = L.circleMarker(
-                [4.70949446000624, -74.10708524062704],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_d275b32cd1a8a2c0c14faaf52eaf56c3 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_0e4c6888758bd7c8a07e3302bdfe5fa7 = $(`<div id="html_0e4c6888758bd7c8a07e3302bdfe5fa7" style="width: 100.0%; height: 100.0%;">Cliente 3.0</div>`)[0];
-                popup_d275b32cd1a8a2c0c14faaf52eaf56c3.setContent(html_0e4c6888758bd7c8a07e3302bdfe5fa7);
-            
-        
-
-        circle_marker_d66e830bcfe80592a379b1ba7b761330.bindPopup(popup_d275b32cd1a8a2c0c14faaf52eaf56c3)
-        ;
-
-        
-    
-    
-            var circle_marker_8b97d8bed1ea94318d98283382c803e9 = L.circleMarker(
-                [4.605029068682624, -74.09727965657427],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_f9f6e094139ea76981c4a0e1e2359bb6 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_a21ece451261cc24b5af71d047acbb1b = $(`<div id="html_a21ece451261cc24b5af71d047acbb1b" style="width: 100.0%; height: 100.0%;">Cliente 4.0</div>`)[0];
-                popup_f9f6e094139ea76981c4a0e1e2359bb6.setContent(html_a21ece451261cc24b5af71d047acbb1b);
-            
-        
-
-        circle_marker_8b97d8bed1ea94318d98283382c803e9.bindPopup(popup_f9f6e094139ea76981c4a0e1e2359bb6)
-        ;
-
-        
-    
-    
-            var circle_marker_2efdedd08255ec4d2ab0e39e6e7a3ca7 = L.circleMarker(
-                [4.648463876533332, -74.16464148202755],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_287ab62560c19f75310f1dc48edc85ad = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_7a62d02a15f90fe417de966ead7cb751 = $(`<div id="html_7a62d02a15f90fe417de966ead7cb751" style="width: 100.0%; height: 100.0%;">Cliente 5.0</div>`)[0];
-                popup_287ab62560c19f75310f1dc48edc85ad.setContent(html_7a62d02a15f90fe417de966ead7cb751);
-            
-        
-
-        circle_marker_2efdedd08255ec4d2ab0e39e6e7a3ca7.bindPopup(popup_287ab62560c19f75310f1dc48edc85ad)
-        ;
-
-        
-    
-    
-            var circle_marker_96e09e2f192d2da9229f24694cbb435b = L.circleMarker(
-                [4.662137416953968, -74.12083799988112],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_a56aa89c8cbaec892d2e7db944398c44 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_0d3db6ee7c5d59ba2ebb17d9d055e137 = $(`<div id="html_0d3db6ee7c5d59ba2ebb17d9d055e137" style="width: 100.0%; height: 100.0%;">Cliente 6.0</div>`)[0];
-                popup_a56aa89c8cbaec892d2e7db944398c44.setContent(html_0d3db6ee7c5d59ba2ebb17d9d055e137);
-            
-        
-
-        circle_marker_96e09e2f192d2da9229f24694cbb435b.bindPopup(popup_a56aa89c8cbaec892d2e7db944398c44)
-        ;
-
-        
-    
-    
-            var circle_marker_e4b1cc382e4bb6927174db3558df0e41 = L.circleMarker(
-                [4.697499030379109, -74.02213076607309],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_514f3b8db6715015d6b181faf529028f = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_d42e2090190a40ed76bb402efc4e2536 = $(`<div id="html_d42e2090190a40ed76bb402efc4e2536" style="width: 100.0%; height: 100.0%;">Cliente 7.0</div>`)[0];
-                popup_514f3b8db6715015d6b181faf529028f.setContent(html_d42e2090190a40ed76bb402efc4e2536);
-            
-        
-
-        circle_marker_e4b1cc382e4bb6927174db3558df0e41.bindPopup(popup_514f3b8db6715015d6b181faf529028f)
-        ;
-
-        
-    
-    
-            var circle_marker_1d093833777b6dd32603e2bdfad245ff = L.circleMarker(
-                [4.649416884236942, -74.17207549744595],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_7e99c0b5e76b53eaf516769386862ff1 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_c3f35cb8684e74766d78f1096d627aae = $(`<div id="html_c3f35cb8684e74766d78f1096d627aae" style="width: 100.0%; height: 100.0%;">Cliente 8.0</div>`)[0];
-                popup_7e99c0b5e76b53eaf516769386862ff1.setContent(html_c3f35cb8684e74766d78f1096d627aae);
-            
-        
-
-        circle_marker_1d093833777b6dd32603e2bdfad245ff.bindPopup(popup_7e99c0b5e76b53eaf516769386862ff1)
-        ;
-
-        
-    
-    
-            var circle_marker_f0d4bd6c2068b33e9166cbaa0420276b = L.circleMarker(
-                [4.606310650273935, -74.15615257246444],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_42fce4d9ec81446523904b726de23813 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_5636c40adc04e796feef663038137286 = $(`<div id="html_5636c40adc04e796feef663038137286" style="width: 100.0%; height: 100.0%;">Cliente 9.0</div>`)[0];
-                popup_42fce4d9ec81446523904b726de23813.setContent(html_5636c40adc04e796feef663038137286);
-            
-        
-
-        circle_marker_f0d4bd6c2068b33e9166cbaa0420276b.bindPopup(popup_42fce4d9ec81446523904b726de23813)
-        ;
-
-        
-    
-    
-            var circle_marker_f985e598240a14af23a4a0653959ee2a = L.circleMarker(
-                [4.557379705282216, -74.09041145358674],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_6ab6cb8a089e7505b538769ef38160e5 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_1276eab746d3cb90036d6d675040e819 = $(`<div id="html_1276eab746d3cb90036d6d675040e819" style="width: 100.0%; height: 100.0%;">Cliente 10.0</div>`)[0];
-                popup_6ab6cb8a089e7505b538769ef38160e5.setContent(html_1276eab746d3cb90036d6d675040e819);
-            
-        
-
-        circle_marker_f985e598240a14af23a4a0653959ee2a.bindPopup(popup_6ab6cb8a089e7505b538769ef38160e5)
-        ;
-
-        
-    
-    
-            var circle_marker_0986d3bb08e9d798be540c3bd1bca815 = L.circleMarker(
-                [4.591594072172954, -74.17802255204528],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_9848460acf95caf4b87ffa0f1ed874d7 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_56313968aa66b6e47fc3fca209211e08 = $(`<div id="html_56313968aa66b6e47fc3fca209211e08" style="width: 100.0%; height: 100.0%;">Cliente 11.0</div>`)[0];
-                popup_9848460acf95caf4b87ffa0f1ed874d7.setContent(html_56313968aa66b6e47fc3fca209211e08);
-            
-        
-
-        circle_marker_0986d3bb08e9d798be540c3bd1bca815.bindPopup(popup_9848460acf95caf4b87ffa0f1ed874d7)
-        ;
-
-        
-    
-    
-            var circle_marker_ff12019eafb067c85301b59e4ab0b83a = L.circleMarker(
-                [4.7564172406324055, -74.1015410917749],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_c5846aea72353df913b62aa4ec9b4568 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_beb29507490697b737488a425b0515c4 = $(`<div id="html_beb29507490697b737488a425b0515c4" style="width: 100.0%; height: 100.0%;">Cliente 12.0</div>`)[0];
-                popup_c5846aea72353df913b62aa4ec9b4568.setContent(html_beb29507490697b737488a425b0515c4);
-            
-        
-
-        circle_marker_ff12019eafb067c85301b59e4ab0b83a.bindPopup(popup_c5846aea72353df913b62aa4ec9b4568)
-        ;
-
-        
-    
-    
-            var circle_marker_de8d6308e5ea4c9df632432d7bda6526 = L.circleMarker(
-                [4.646217006050524, -74.09690889182339],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_fc18f106a251bd63c3b2964ff25e2c1c = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_3fc3f7a2f6824eb5f78e120b0a19697d = $(`<div id="html_3fc3f7a2f6824eb5f78e120b0a19697d" style="width: 100.0%; height: 100.0%;">Cliente 13.0</div>`)[0];
-                popup_fc18f106a251bd63c3b2964ff25e2c1c.setContent(html_3fc3f7a2f6824eb5f78e120b0a19697d);
-            
-        
-
-        circle_marker_de8d6308e5ea4c9df632432d7bda6526.bindPopup(popup_fc18f106a251bd63c3b2964ff25e2c1c)
-        ;
-
-        
-    
-    
-            var circle_marker_e7ee607acbcf11704b7d391189ff9be5 = L.circleMarker(
-                [4.725912125314368, -74.1219200708342],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_31e61ead2562f3cc936f221f5effdb0c = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_d1902e1a7790a112680f0fb290670ca0 = $(`<div id="html_d1902e1a7790a112680f0fb290670ca0" style="width: 100.0%; height: 100.0%;">Cliente 14.0</div>`)[0];
-                popup_31e61ead2562f3cc936f221f5effdb0c.setContent(html_d1902e1a7790a112680f0fb290670ca0);
-            
-        
-
-        circle_marker_e7ee607acbcf11704b7d391189ff9be5.bindPopup(popup_31e61ead2562f3cc936f221f5effdb0c)
-        ;
-
-        
-    
-    
-            var circle_marker_36639ab7e5834a6445ddaa0935be958a = L.circleMarker(
-                [4.604168478560718, -74.0942948461378],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_18e78a4bdb113b42d44204307f75f8f0 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_6faea7526cb8a795d846685f5ebe85bf = $(`<div id="html_6faea7526cb8a795d846685f5ebe85bf" style="width: 100.0%; height: 100.0%;">Cliente 15.0</div>`)[0];
-                popup_18e78a4bdb113b42d44204307f75f8f0.setContent(html_6faea7526cb8a795d846685f5ebe85bf);
-            
-        
-
-        circle_marker_36639ab7e5834a6445ddaa0935be958a.bindPopup(popup_18e78a4bdb113b42d44204307f75f8f0)
-        ;
-
-        
-    
-    
-            var circle_marker_a772a02e4219c086dd3a9e1de7f49b19 = L.circleMarker(
-                [4.557320898243896, -74.11138839002187],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_d0ca612794f84a3c435544263d631565 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_6e61a488c896cab163e0556b91579659 = $(`<div id="html_6e61a488c896cab163e0556b91579659" style="width: 100.0%; height: 100.0%;">Cliente 16.0</div>`)[0];
-                popup_d0ca612794f84a3c435544263d631565.setContent(html_6e61a488c896cab163e0556b91579659);
-            
-        
-
-        circle_marker_a772a02e4219c086dd3a9e1de7f49b19.bindPopup(popup_d0ca612794f84a3c435544263d631565)
-        ;
-
-        
-    
-    
-            var circle_marker_84e57d5bb7ddec8c53bef27c2d4e6410 = L.circleMarker(
-                [4.615869066082658, -74.12463941285208],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_96b2fddb49393a782a5a91ef02b3b739 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_bb7fc5420cb981bdc2be326c7c7f9fd8 = $(`<div id="html_bb7fc5420cb981bdc2be326c7c7f9fd8" style="width: 100.0%; height: 100.0%;">Cliente 17.0</div>`)[0];
-                popup_96b2fddb49393a782a5a91ef02b3b739.setContent(html_bb7fc5420cb981bdc2be326c7c7f9fd8);
-            
-        
-
-        circle_marker_84e57d5bb7ddec8c53bef27c2d4e6410.bindPopup(popup_96b2fddb49393a782a5a91ef02b3b739)
-        ;
-
-        
-    
-    
-            var circle_marker_004ad2beb581d286d710e1d75078fa64 = L.circleMarker(
-                [4.656402930181292, -74.12456164551857],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_fee7c52d94a2dda6c66631cb2e302cbf = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_8f3074950f562b5cd886fc4d519eb6ca = $(`<div id="html_8f3074950f562b5cd886fc4d519eb6ca" style="width: 100.0%; height: 100.0%;">Cliente 18.0</div>`)[0];
-                popup_fee7c52d94a2dda6c66631cb2e302cbf.setContent(html_8f3074950f562b5cd886fc4d519eb6ca);
-            
-        
-
-        circle_marker_004ad2beb581d286d710e1d75078fa64.bindPopup(popup_fee7c52d94a2dda6c66631cb2e302cbf)
-        ;
-
-        
-    
-    
-            var circle_marker_8857e4cd8fb504cc06fdbe0a790f8705 = L.circleMarker(
-                [4.706188309535041, -74.04990580408855],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_7a8737f84357312f2fed85f907366373 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_fa7bfca6ca5c55c80c7d4b425b98f323 = $(`<div id="html_fa7bfca6ca5c55c80c7d4b425b98f323" style="width: 100.0%; height: 100.0%;">Cliente 19.0</div>`)[0];
-                popup_7a8737f84357312f2fed85f907366373.setContent(html_fa7bfca6ca5c55c80c7d4b425b98f323);
-            
-        
-
-        circle_marker_8857e4cd8fb504cc06fdbe0a790f8705.bindPopup(popup_7a8737f84357312f2fed85f907366373)
-        ;
-
-        
-    
-    
-            var circle_marker_88fd437f8310aadb2d78878b5ca9bfb7 = L.circleMarker(
-                [4.746624762561149, -74.121866801394],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_a7295116e4a8b9ce1549a7cd7123c607 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_7b510cf43bdf8c9b64229bf8c7efaa7f = $(`<div id="html_7b510cf43bdf8c9b64229bf8c7efaa7f" style="width: 100.0%; height: 100.0%;">Cliente 20.0</div>`)[0];
-                popup_a7295116e4a8b9ce1549a7cd7123c607.setContent(html_7b510cf43bdf8c9b64229bf8c7efaa7f);
-            
-        
-
-        circle_marker_88fd437f8310aadb2d78878b5ca9bfb7.bindPopup(popup_a7295116e4a8b9ce1549a7cd7123c607)
-        ;
-
-        
-    
-    
-            var circle_marker_1cd3bc2c42cc67a5a653269363e963a2 = L.circleMarker(
-                [4.746517184687941, -74.02454895778163],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_c295f5a7aef7f122a881695fd844eaee = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_442c67708145773d1545cf468ded3a99 = $(`<div id="html_442c67708145773d1545cf468ded3a99" style="width: 100.0%; height: 100.0%;">Cliente 21.0</div>`)[0];
-                popup_c295f5a7aef7f122a881695fd844eaee.setContent(html_442c67708145773d1545cf468ded3a99);
-            
-        
-
-        circle_marker_1cd3bc2c42cc67a5a653269363e963a2.bindPopup(popup_c295f5a7aef7f122a881695fd844eaee)
-        ;
-
-        
-    
-    
-            var circle_marker_939bd5bffc55a55ba8defea48f1bf172 = L.circleMarker(
-                [4.625425626584072, -74.08683592702927],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_875eaa325e45be6f04c880107296746c = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_08b947c9455c5657300a6263f60a5429 = $(`<div id="html_08b947c9455c5657300a6263f60a5429" style="width: 100.0%; height: 100.0%;">Cliente 22.0</div>`)[0];
-                popup_875eaa325e45be6f04c880107296746c.setContent(html_08b947c9455c5657300a6263f60a5429);
-            
-        
-
-        circle_marker_939bd5bffc55a55ba8defea48f1bf172.bindPopup(popup_875eaa325e45be6f04c880107296746c)
-        ;
-
-        
-    
-    
-            var circle_marker_800b460483c0317af44f9c70c8ce2860 = L.circleMarker(
-                [4.731406773645735, -74.11652648751144],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_d99bb0e2234869352f5eed8ced257d6a = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_5cc1b3de68c9a3cec626a0d2c5203018 = $(`<div id="html_5cc1b3de68c9a3cec626a0d2c5203018" style="width: 100.0%; height: 100.0%;">Cliente 23.0</div>`)[0];
-                popup_d99bb0e2234869352f5eed8ced257d6a.setContent(html_5cc1b3de68c9a3cec626a0d2c5203018);
-            
-        
-
-        circle_marker_800b460483c0317af44f9c70c8ce2860.bindPopup(popup_d99bb0e2234869352f5eed8ced257d6a)
-        ;
-
-        
-    
-    
-            var circle_marker_ed5be51f701e2cc7cdb81992cc641ede = L.circleMarker(
-                [4.577489966973782, -74.12629327283491],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-        var popup_ca0c45ab9618f60eba7c9327f54528a2 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_f0f41b5f3eaec4f9b57354b401f50b0a = $(`<div id="html_f0f41b5f3eaec4f9b57354b401f50b0a" style="width: 100.0%; height: 100.0%;">Cliente 24.0</div>`)[0];
-                popup_ca0c45ab9618f60eba7c9327f54528a2.setContent(html_f0f41b5f3eaec4f9b57354b401f50b0a);
-            
-        
-
-        circle_marker_ed5be51f701e2cc7cdb81992cc641ede.bindPopup(popup_ca0c45ab9618f60eba7c9327f54528a2)
-        ;
-
-        
-    
-    
-            var poly_line_786b2da3666fdc3a881741867cd8cf49 = L.polyline(
-                [[4.743359, -74.153536]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
-        
-    
-            poly_line_786b2da3666fdc3a881741867cd8cf49.bindTooltip(
+            marker_338a99428c085037e59bc35b22d84f31.bindTooltip(
                 `<div>
-                     Vehículo 1
+                     Nodo 13 - drone
                  </div>`,
                 {
   "sticky": true,
@@ -690,41 +161,17 @@
             );
         
     
-            poly_line_786b2da3666fdc3a881741867cd8cf49.setText(
-                "\u27a4                    ",
-                {
-  "repeat": true,
-  "center": false,
-  "below": false,
-  "offset": 7,
-  "orientation": 0,
-  "attributes": {
-  "fill": "red",
-  "font-weight": "bold",
-  "font-size": "12",
-},
-}
-            );
-        
+                marker_338a99428c085037e59bc35b22d84f31.setIcon(icon_9695efee1db1eb953bb37310be90883f);
+            
     
-            var poly_line_4b580842f3f61dc80b24076a361c7d22 = L.polyline(
-                [[4.743359, -74.153536], [4.646217006050524, -74.09690889182339], [4.604168478560718, -74.0942948461378], [4.577489966973782, -74.12629327283491], [4.743359, -74.153536], [4.606310650273935, -74.15615257246444], [4.605029068682624, -74.09727965657427], [4.615869066082658, -74.12463941285208], [4.591594072172954, -74.17802255204528], [4.59795431125545, -74.09893796560621]],
+            var poly_line_b15454fdd5158a5db01ccfd72193d9cf = L.polyline(
+                [[4.743359, -74.153536], [4.646217006050524, -74.09690889182339]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            poly_line_4b580842f3f61dc80b24076a361c7d22.bindTooltip(
-                `<div>
-                     Vehículo 2
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            poly_line_4b580842f3f61dc80b24076a361c7d22.setText(
-                "\u27a4                    ",
+            poly_line_b15454fdd5158a5db01ccfd72193d9cf.setText(
+                "\u27a4   ",
                 {
   "repeat": true,
   "center": false,
@@ -740,15 +187,27 @@
             );
         
     
-            var poly_line_b02c5fb950e4f942876209eb16e8951c = L.polyline(
-                [[4.743359, -74.153536]],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            var marker_7ade66b4411cb6e30c1436638734d265 = L.marker(
+                [4.605029068682624, -74.09727965657427],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            poly_line_b02c5fb950e4f942876209eb16e8951c.bindTooltip(
+            var icon_baf6d6577c932cea51e475e225ce4c30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7ade66b4411cb6e30c1436638734d265.bindTooltip(
                 `<div>
-                     Vehículo 3
+                     Nodo 4 - drone
                  </div>`,
                 {
   "sticky": true,
@@ -756,8 +215,17 @@
             );
         
     
-            poly_line_b02c5fb950e4f942876209eb16e8951c.setText(
-                "\u27a4                    ",
+                marker_7ade66b4411cb6e30c1436638734d265.setIcon(icon_baf6d6577c932cea51e475e225ce4c30);
+            
+    
+            var poly_line_dfef727e4abcf44c26042dd500056306 = L.polyline(
+                [[4.646217006050524, -74.09690889182339], [4.605029068682624, -74.09727965657427]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_dfef727e4abcf44c26042dd500056306.setText(
+                "\u27a4   ",
                 {
   "repeat": true,
   "center": false,
@@ -765,7 +233,7 @@
   "offset": 7,
   "orientation": 0,
   "attributes": {
-  "fill": "green",
+  "fill": "blue",
   "font-weight": "bold",
   "font-size": "12",
 },
@@ -773,15 +241,27 @@
             );
         
     
-            var poly_line_ee053712b08b711632632825066ceb22 = L.polyline(
-                [[4.743359, -74.153536], [4.725912125314368, -74.1219200708342], [4.743359, -74.153536], [4.731406773645735, -74.11652648751144], [4.7564172406324055, -74.1015410917749], [4.746624762561149, -74.121866801394]],
-                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            var marker_eaf0bbf0b0132379a87e560ad3bc1cff = L.marker(
+                [4.577489966973782, -74.12629327283491],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            poly_line_ee053712b08b711632632825066ceb22.bindTooltip(
+            var icon_f5a0451f30409ae555ffa21bff9b758f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_eaf0bbf0b0132379a87e560ad3bc1cff.bindTooltip(
                 `<div>
-                     Vehículo 4
+                     Nodo 24 - drone
                  </div>`,
                 {
   "sticky": true,
@@ -789,8 +269,395 @@
             );
         
     
-            poly_line_ee053712b08b711632632825066ceb22.setText(
-                "\u27a4                    ",
+                marker_eaf0bbf0b0132379a87e560ad3bc1cff.setIcon(icon_f5a0451f30409ae555ffa21bff9b758f);
+            
+    
+            var poly_line_f3807f08f27557470ff74fdf3de4395c = L.polyline(
+                [[4.605029068682624, -74.09727965657427], [4.577489966973782, -74.12629327283491]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_f3807f08f27557470ff74fdf3de4395c.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "blue",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_6dc41a470ed2bd44fe26b9964244068f = L.marker(
+                [4.59795431125545, -74.09893796560621],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_d0fc478ea12eeacf1afedf9a1de8c846 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6dc41a470ed2bd44fe26b9964244068f.bindTooltip(
+                `<div>
+                     Nodo 1 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dc41a470ed2bd44fe26b9964244068f.setIcon(icon_d0fc478ea12eeacf1afedf9a1de8c846);
+            
+    
+            var poly_line_7f734a95f8e8a716b758fd1e890d7da1 = L.polyline(
+                [[4.577489966973782, -74.12629327283491], [4.59795431125545, -74.09893796560621]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_7f734a95f8e8a716b758fd1e890d7da1.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "blue",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_f0caec7b69b95914c1c4f2dca99c0676 = L.marker(
+                [4.604168478560718, -74.0942948461378],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_37a91909d27613190be71717bf20445b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f0caec7b69b95914c1c4f2dca99c0676.bindTooltip(
+                `<div>
+                     Nodo 15 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0caec7b69b95914c1c4f2dca99c0676.setIcon(icon_37a91909d27613190be71717bf20445b);
+            
+    
+            var poly_line_7410220da8136a1b9c7f4d1a1dddb0b0 = L.polyline(
+                [[4.59795431125545, -74.09893796560621], [4.604168478560718, -74.0942948461378]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_7410220da8136a1b9c7f4d1a1dddb0b0.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "blue",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_b56fa5c01cf62d53efb96a69fb5a51b3 = L.marker(
+                [4.615869066082658, -74.12463941285208],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_5ddc22e02896a5ec029a5c890b627e72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b56fa5c01cf62d53efb96a69fb5a51b3.bindTooltip(
+                `<div>
+                     Nodo 17 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b56fa5c01cf62d53efb96a69fb5a51b3.setIcon(icon_5ddc22e02896a5ec029a5c890b627e72);
+            
+    
+            var poly_line_5c814b0320a262623b0e9b72110e3107 = L.polyline(
+                [[4.604168478560718, -74.0942948461378], [4.615869066082658, -74.12463941285208]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_5c814b0320a262623b0e9b72110e3107.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "blue",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_acb6c46522942168da93ae87b243f41f = L.marker(
+                [4.591594072172954, -74.17802255204528],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_1394ab0a7917db609a93d093cc2b73ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_acb6c46522942168da93ae87b243f41f.bindTooltip(
+                `<div>
+                     Nodo 11 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_acb6c46522942168da93ae87b243f41f.setIcon(icon_1394ab0a7917db609a93d093cc2b73ef);
+            
+    
+            var poly_line_fb8c920a11c4f4e44bb40f7c6574175b = L.polyline(
+                [[4.615869066082658, -74.12463941285208], [4.591594072172954, -74.17802255204528]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_fb8c920a11c4f4e44bb40f7c6574175b.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "blue",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_59e0a7399d946adbc8825df478adebc5 = L.marker(
+                [4.606310650273935, -74.15615257246444],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_b88b0dd56acf5194306c117837bfe145 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_59e0a7399d946adbc8825df478adebc5.bindTooltip(
+                `<div>
+                     Nodo 9 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59e0a7399d946adbc8825df478adebc5.setIcon(icon_b88b0dd56acf5194306c117837bfe145);
+            
+    
+            var poly_line_b92f1fdd6bc2175939bd6f32b857800b = L.polyline(
+                [[4.591594072172954, -74.17802255204528], [4.606310650273935, -74.15615257246444]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_b92f1fdd6bc2175939bd6f32b857800b.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "blue",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_c4fc863e20e27b30c4054aa1d5268f66 = L.marker(
+                [4.743359, -74.153536],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_fbae9b609f8a435c40db8f9cdefd67b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c4fc863e20e27b30c4054aa1d5268f66.bindTooltip(
+                `<div>
+                     Nodo 0 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4fc863e20e27b30c4054aa1d5268f66.setIcon(icon_fbae9b609f8a435c40db8f9cdefd67b4);
+            
+    
+            var poly_line_7d3971bd16a8beb716de89e60652a6dc = L.polyline(
+                [[4.606310650273935, -74.15615257246444], [4.743359, -74.153536]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_7d3971bd16a8beb716de89e60652a6dc.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "blue",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_0b5de588446955a9439e7f1159e55504 = L.marker(
+                [4.725912125314368, -74.1219200708342],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_6de0ec9a130b986758fee7a627de9372 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0b5de588446955a9439e7f1159e55504.bindTooltip(
+                `<div>
+                     Nodo 14 - 4x4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b5de588446955a9439e7f1159e55504.setIcon(icon_6de0ec9a130b986758fee7a627de9372);
+            
+    
+            var poly_line_72b96ce89d70ae2224f6b4370f0a15b4 = L.polyline(
+                [[4.743359, -74.153536], [4.725912125314368, -74.1219200708342]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_72b96ce89d70ae2224f6b4370f0a15b4.setText(
+                "\u27a4   ",
                 {
   "repeat": true,
   "center": false,
@@ -806,15 +673,27 @@
             );
         
     
-            var poly_line_bcb3d5521a34eefbdab69b94179e7088 = L.polyline(
-                [[4.743359, -74.153536], [4.687820646838871, -74.07557103763986], [4.697499030379109, -74.02213076607309], [4.743359, -74.153536], [4.746517184687941, -74.02454895778163], [4.70949446000624, -74.10708524062704], [4.706188309535041, -74.04990580408855]],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            var marker_089504132c86e933967aa7c7c65dc7b6 = L.marker(
+                [4.731406773645735, -74.11652648751144],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            poly_line_bcb3d5521a34eefbdab69b94179e7088.bindTooltip(
+            var icon_126679a3577faff97be6cdc69b745f68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_089504132c86e933967aa7c7c65dc7b6.bindTooltip(
                 `<div>
-                     Vehículo 5
+                     Nodo 23 - 4x4
                  </div>`,
                 {
   "sticky": true,
@@ -822,8 +701,233 @@
             );
         
     
-            poly_line_bcb3d5521a34eefbdab69b94179e7088.setText(
-                "\u27a4                    ",
+                marker_089504132c86e933967aa7c7c65dc7b6.setIcon(icon_126679a3577faff97be6cdc69b745f68);
+            
+    
+            var poly_line_92dcab35323a2c0a7787aacafcac8732 = L.polyline(
+                [[4.725912125314368, -74.1219200708342], [4.731406773645735, -74.11652648751144]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_92dcab35323a2c0a7787aacafcac8732.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "purple",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_2fce1995b2733b7ed6c9f69d19528028 = L.marker(
+                [4.746624762561149, -74.121866801394],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_162847f6488da5536b0bf119eb3d58a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2fce1995b2733b7ed6c9f69d19528028.bindTooltip(
+                `<div>
+                     Nodo 20 - 4x4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2fce1995b2733b7ed6c9f69d19528028.setIcon(icon_162847f6488da5536b0bf119eb3d58a2);
+            
+    
+            var poly_line_16a45b1103c53a0c632df74e31091df8 = L.polyline(
+                [[4.731406773645735, -74.11652648751144], [4.746624762561149, -74.121866801394]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_16a45b1103c53a0c632df74e31091df8.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "purple",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_f14fec604eca0404346522c619a8b496 = L.marker(
+                [4.7564172406324055, -74.1015410917749],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_0702b1f04400349569726c095051aae9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f14fec604eca0404346522c619a8b496.bindTooltip(
+                `<div>
+                     Nodo 12 - 4x4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f14fec604eca0404346522c619a8b496.setIcon(icon_0702b1f04400349569726c095051aae9);
+            
+    
+            var poly_line_840d4b30eab1af5fd80aad3156a9b625 = L.polyline(
+                [[4.746624762561149, -74.121866801394], [4.7564172406324055, -74.1015410917749]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_840d4b30eab1af5fd80aad3156a9b625.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "purple",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_7d72cdb8db77946dd8b1fafa39ce4413 = L.marker(
+                [4.743359, -74.153536],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_2ce79b808526f88283f711cd1f2adf10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7d72cdb8db77946dd8b1fafa39ce4413.bindTooltip(
+                `<div>
+                     Nodo 0 - 4x4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d72cdb8db77946dd8b1fafa39ce4413.setIcon(icon_2ce79b808526f88283f711cd1f2adf10);
+            
+    
+            var poly_line_7f91e637fa09ba70fedc1e5040885539 = L.polyline(
+                [[4.7564172406324055, -74.1015410917749], [4.743359, -74.153536]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_7f91e637fa09ba70fedc1e5040885539.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "purple",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_4ed239e50cc516d20fd5fadf82637360 = L.marker(
+                [4.687820646838871, -74.07557103763986],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_91d15b51214a3c49bf3c16e2f0b69e29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4ed239e50cc516d20fd5fadf82637360.bindTooltip(
+                `<div>
+                     Nodo 2 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ed239e50cc516d20fd5fadf82637360.setIcon(icon_91d15b51214a3c49bf3c16e2f0b69e29);
+            
+    
+            var poly_line_f7f6285a75fcd197a4257f953d0899e8 = L.polyline(
+                [[4.743359, -74.153536], [4.687820646838871, -74.07557103763986]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_f7f6285a75fcd197a4257f953d0899e8.setText(
+                "\u27a4   ",
                 {
   "repeat": true,
   "center": false,
@@ -839,15 +943,27 @@
             );
         
     
-            var poly_line_d8532d4a0b569013fba03d72168643ba = L.polyline(
-                [[4.743359, -74.153536]],
-                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            var marker_a1899e383c8070a48a5db24e429e3e1d = L.marker(
+                [4.697499030379109, -74.02213076607309],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            poly_line_d8532d4a0b569013fba03d72168643ba.bindTooltip(
+            var icon_9d6dde91d8a2c6cd8a89c0adae4c1fb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a1899e383c8070a48a5db24e429e3e1d.bindTooltip(
                 `<div>
-                     Vehículo 6
+                     Nodo 7 - drone
                  </div>`,
                 {
   "sticky": true,
@@ -855,8 +971,17 @@
             );
         
     
-            poly_line_d8532d4a0b569013fba03d72168643ba.setText(
-                "\u27a4                    ",
+                marker_a1899e383c8070a48a5db24e429e3e1d.setIcon(icon_9d6dde91d8a2c6cd8a89c0adae4c1fb7);
+            
+    
+            var poly_line_8f852bc7f5425de3ebf2478cc06fd0d9 = L.polyline(
+                [[4.687820646838871, -74.07557103763986], [4.697499030379109, -74.02213076607309]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_8f852bc7f5425de3ebf2478cc06fd0d9.setText(
+                "\u27a4   ",
                 {
   "repeat": true,
   "center": false,
@@ -864,7 +989,7 @@
   "offset": 7,
   "orientation": 0,
   "attributes": {
-  "fill": "darkred",
+  "fill": "orange",
   "font-weight": "bold",
   "font-size": "12",
 },
@@ -872,15 +997,27 @@
             );
         
     
-            var poly_line_17a7fe48908778c35324a9a5094b01a9 = L.polyline(
-                [[4.743359, -74.153536]],
-                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            var marker_4ac3e5b566e4e2a06cc86b8ac197b658 = L.marker(
+                [4.746517184687941, -74.02454895778163],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            poly_line_17a7fe48908778c35324a9a5094b01a9.bindTooltip(
+            var icon_ebbb5810bf721edd603e9d466b93c5d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4ac3e5b566e4e2a06cc86b8ac197b658.bindTooltip(
                 `<div>
-                     Vehículo 7
+                     Nodo 21 - drone
                  </div>`,
                 {
   "sticky": true,
@@ -888,8 +1025,17 @@
             );
         
     
-            poly_line_17a7fe48908778c35324a9a5094b01a9.setText(
-                "\u27a4                    ",
+                marker_4ac3e5b566e4e2a06cc86b8ac197b658.setIcon(icon_ebbb5810bf721edd603e9d466b93c5d7);
+            
+    
+            var poly_line_fa0f1d5b0d8bea87456a0444eada8a8e = L.polyline(
+                [[4.697499030379109, -74.02213076607309], [4.746517184687941, -74.02454895778163]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_fa0f1d5b0d8bea87456a0444eada8a8e.setText(
+                "\u27a4   ",
                 {
   "repeat": true,
   "center": false,
@@ -897,7 +1043,7 @@
   "offset": 7,
   "orientation": 0,
   "attributes": {
-  "fill": "lightred",
+  "fill": "orange",
   "font-weight": "bold",
   "font-size": "12",
 },
@@ -905,15 +1051,27 @@
             );
         
     
-            var poly_line_449ce8bf5869879a5a563ec11f39aea6 = L.polyline(
-                [[4.743359, -74.153536], [4.557320898243896, -74.11138839002187], [4.662137416953968, -74.12083799988112], [4.625425626584072, -74.08683592702927], [4.648463876533332, -74.16464148202755], [4.649416884236942, -74.17207549744595], [4.557379705282216, -74.09041145358674], [4.743359, -74.153536], [4.656402930181292, -74.12456164551857]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb8a00296022d7426b83bc60bddd17);
+            var marker_4e9fd2a1d90b8ba0406c853b59f66942 = L.marker(
+                [4.706188309535041, -74.04990580408855],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
         
     
-            poly_line_449ce8bf5869879a5a563ec11f39aea6.bindTooltip(
+            var icon_e92dfd624f72d89291973d82651120df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4e9fd2a1d90b8ba0406c853b59f66942.bindTooltip(
                 `<div>
-                     Vehículo 8
+                     Nodo 19 - drone
                  </div>`,
                 {
   "sticky": true,
@@ -921,8 +1079,17 @@
             );
         
     
-            poly_line_449ce8bf5869879a5a563ec11f39aea6.setText(
-                "\u27a4                    ",
+                marker_4e9fd2a1d90b8ba0406c853b59f66942.setIcon(icon_e92dfd624f72d89291973d82651120df);
+            
+    
+            var poly_line_7c08dc433b9d6eb4e3c88c915e067f95 = L.polyline(
+                [[4.746517184687941, -74.02454895778163], [4.706188309535041, -74.04990580408855]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_7c08dc433b9d6eb4e3c88c915e067f95.setText(
+                "\u27a4   ",
                 {
   "repeat": true,
   "center": false,
@@ -930,7 +1097,547 @@
   "offset": 7,
   "orientation": 0,
   "attributes": {
-  "fill": "red",
+  "fill": "orange",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_0de5e8525334bbffe3e3895cc88914a4 = L.marker(
+                [4.70949446000624, -74.10708524062704],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_9013f947e845d51b74aea91b4726c237 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0de5e8525334bbffe3e3895cc88914a4.bindTooltip(
+                `<div>
+                     Nodo 3 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0de5e8525334bbffe3e3895cc88914a4.setIcon(icon_9013f947e845d51b74aea91b4726c237);
+            
+    
+            var poly_line_8b92701f4d7a6549dddaa5af3e23d286 = L.polyline(
+                [[4.706188309535041, -74.04990580408855], [4.70949446000624, -74.10708524062704]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_8b92701f4d7a6549dddaa5af3e23d286.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "orange",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_8fad3a877dab4c8d53e90607a395f4ee = L.marker(
+                [4.743359, -74.153536],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_cbefc9b8dd852f2d8611fe89ba44498e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8fad3a877dab4c8d53e90607a395f4ee.bindTooltip(
+                `<div>
+                     Nodo 0 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fad3a877dab4c8d53e90607a395f4ee.setIcon(icon_cbefc9b8dd852f2d8611fe89ba44498e);
+            
+    
+            var poly_line_acc5e8a9a20a94fc46c0bab76e2fc95d = L.polyline(
+                [[4.70949446000624, -74.10708524062704], [4.743359, -74.153536]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_acc5e8a9a20a94fc46c0bab76e2fc95d.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "orange",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_9f5e594c24a905c0dcab95c8eb7208c1 = L.marker(
+                [4.557320898243896, -74.11138839002187],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_8935807d69fc69e3c83fa23d236fd444 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9f5e594c24a905c0dcab95c8eb7208c1.bindTooltip(
+                `<div>
+                     Nodo 16 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f5e594c24a905c0dcab95c8eb7208c1.setIcon(icon_8935807d69fc69e3c83fa23d236fd444);
+            
+    
+            var poly_line_37936816df89ac4ba00871c807a85389 = L.polyline(
+                [[4.743359, -74.153536], [4.557320898243896, -74.11138839002187]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_37936816df89ac4ba00871c807a85389.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_37ef58b49b1c7b89571dcbb8549f624e = L.marker(
+                [4.557379705282216, -74.09041145358674],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_b92a171e3d75005e3f2dee93fa3c3029 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_37ef58b49b1c7b89571dcbb8549f624e.bindTooltip(
+                `<div>
+                     Nodo 10 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37ef58b49b1c7b89571dcbb8549f624e.setIcon(icon_b92a171e3d75005e3f2dee93fa3c3029);
+            
+    
+            var poly_line_d855df06ab272f3f04d294a2eef1c5cf = L.polyline(
+                [[4.557320898243896, -74.11138839002187], [4.557379705282216, -74.09041145358674]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_d855df06ab272f3f04d294a2eef1c5cf.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_6c54b71e76b6776c045a5197fc597afb = L.marker(
+                [4.649416884236942, -74.17207549744595],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_0237109e78cd9c044637cf320e7cb719 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6c54b71e76b6776c045a5197fc597afb.bindTooltip(
+                `<div>
+                     Nodo 8 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c54b71e76b6776c045a5197fc597afb.setIcon(icon_0237109e78cd9c044637cf320e7cb719);
+            
+    
+            var poly_line_2830a5cd2717c3386b00670ed1223497 = L.polyline(
+                [[4.557379705282216, -74.09041145358674], [4.649416884236942, -74.17207549744595]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_2830a5cd2717c3386b00670ed1223497.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_9bda5036bdf001ce6236a2c27a7e0541 = L.marker(
+                [4.648463876533332, -74.16464148202755],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_26ea7e4f590506b21e0eece6f530fe92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9bda5036bdf001ce6236a2c27a7e0541.bindTooltip(
+                `<div>
+                     Nodo 5 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9bda5036bdf001ce6236a2c27a7e0541.setIcon(icon_26ea7e4f590506b21e0eece6f530fe92);
+            
+    
+            var poly_line_83886fb236f63eee33beb7c1a0ef3d39 = L.polyline(
+                [[4.649416884236942, -74.17207549744595], [4.648463876533332, -74.16464148202755]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_83886fb236f63eee33beb7c1a0ef3d39.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_fb67ac4f04c6688c8bd56ec82450e7cd = L.marker(
+                [4.662137416953968, -74.12083799988112],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_4db0d896c5662899fd991c8ed4e98141 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fb67ac4f04c6688c8bd56ec82450e7cd.bindTooltip(
+                `<div>
+                     Nodo 6 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb67ac4f04c6688c8bd56ec82450e7cd.setIcon(icon_4db0d896c5662899fd991c8ed4e98141);
+            
+    
+            var poly_line_20d27fb0b39f2a9a9b3406a57d946e0f = L.polyline(
+                [[4.648463876533332, -74.16464148202755], [4.662137416953968, -74.12083799988112]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_20d27fb0b39f2a9a9b3406a57d946e0f.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_f884b9360ed0569b4b618baa78352717 = L.marker(
+                [4.625425626584072, -74.08683592702927],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_1dabf76180da18da95673770f56dc0c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f884b9360ed0569b4b618baa78352717.bindTooltip(
+                `<div>
+                     Nodo 22 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f884b9360ed0569b4b618baa78352717.setIcon(icon_1dabf76180da18da95673770f56dc0c3);
+            
+    
+            var poly_line_efbe133945a901413efb5cedf40e4ca9 = L.polyline(
+                [[4.662137416953968, -74.12083799988112], [4.625425626584072, -74.08683592702927]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_efbe133945a901413efb5cedf40e4ca9.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_361a2cdaa92d5e503bc23b0a1d57c03e = L.marker(
+                [4.656402930181292, -74.12456164551857],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_91ed59ad5e4a6824a71f1b3b7c499af4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_361a2cdaa92d5e503bc23b0a1d57c03e.bindTooltip(
+                `<div>
+                     Nodo 18 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_361a2cdaa92d5e503bc23b0a1d57c03e.setIcon(icon_91ed59ad5e4a6824a71f1b3b7c499af4);
+            
+    
+            var poly_line_8561af798922ebd98609e12e64b21afb = L.polyline(
+                [[4.625425626584072, -74.08683592702927], [4.656402930181292, -74.12456164551857]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_8561af798922ebd98609e12e64b21afb.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
+  "font-weight": "bold",
+  "font-size": "12",
+},
+}
+            );
+        
+    
+            var marker_576a1173f80915a1ccaa879ad3e17417 = L.marker(
+                [4.743359, -74.153536],
+                {
+}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            var icon_660b92cf002caafa7f8e4e343b904220 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_576a1173f80915a1ccaa879ad3e17417.bindTooltip(
+                `<div>
+                     Nodo 0 - drone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_576a1173f80915a1ccaa879ad3e17417.setIcon(icon_660b92cf002caafa7f8e4e343b904220);
+            
+    
+            var poly_line_2d4bda5b6cba932a6aff084b0fb77fe5 = L.polyline(
+                [[4.656402930181292, -74.12456164551857], [4.743359, -74.153536]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_af16beb2fc7c215efc0fa6838692e786);
+        
+    
+            poly_line_2d4bda5b6cba932a6aff084b0fb77fe5.setText(
+                "\u27a4   ",
+                {
+  "repeat": true,
+  "center": false,
+  "below": false,
+  "offset": 7,
+  "orientation": 0,
+  "attributes": {
+  "fill": "black",
   "font-weight": "bold",
   "font-size": "12",
 },
