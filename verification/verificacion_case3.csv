@@ -1,0 +1,6 @@
+Vehículo,Tipo,Carga acum,Capacidad,Dentro cap,Distancia acum (km),Rango veh (km),Dentro rango
+1,4x4,00:11,22.0,200.0,Sí,4.9,804.0,Sí
+2,drone,00:01,25.0,25.0,Sí,2.6,480.0,Sí
+3,drone,00:00,9.0,25.0,Sí,0.9,480.0,Sí
+3,drone,00:01,21.0,25.0,Sí,3.4,480.0,Sí
+3,drone,00:03,25.0,25.0,Sí,7.1,480.0,Sí
